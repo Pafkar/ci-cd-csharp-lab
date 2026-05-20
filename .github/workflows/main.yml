@@ -18,10 +18,10 @@ jobs:
         dotnet-version: '8.0.x'
     
     - name: Restore main project
-      run: dotnet restore ConsoleApp1/ConsoleApp1.csproj
+      run: dotnet restore ConsoleApp1.csproj
     
     - name: Build main project
-      run: dotnet build ConsoleApp1/ConsoleApp1.csproj --no-restore
+      run: dotnet build ConsoleApp1.csproj --no-restore
     
     - name: Restore test project
       run: dotnet restore CalculatorApp.Tests/CalculatorApp.Tests.csproj
